@@ -16,6 +16,6 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  !!(phone.match(/\d{10}/))
+  phone.match(/\d{10}/) != nil
 #phone.scan(/\d/).count.eql?(10)
 end
